@@ -10,7 +10,7 @@ CREATE TABLE #DATABASES (
 
 INSERT INTO #DATABASES (database_ID, database_name)
 SELECT database_ID, name from sys.databases
-where database_id IN (1,2,3,4) /* Updated the where condition to look for a specific database or remove the where clause to search in whole DB server */
+where database_id IN (1,2,3,4) /* Update the where condition to look for a specific database or remove the where clause to search in whole DB server */
 
 DECLARE
     @database_id int,
